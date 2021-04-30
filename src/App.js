@@ -6,7 +6,7 @@ import AboutPage from "./AboutPage";
 import HomePage from "./HomePage";
 
 function TabPanel(props) {
-    const {children, value, index, ...other} = props;
+    const {children, value, index, overflow, ...other} = props;
 
     return (
         <div
@@ -14,7 +14,7 @@ function TabPanel(props) {
             hidden={value !== index}
             id={`simple-tabpanel-${index}`}
             aria-labelledby={`simple-tab-${index}`}
-            style={{height: '100%'}}
+            style={{display: 'flex', flex: (value === index ? '1 0' : '0 1'), overflow: overflow || 'auto'}}
             {...other}
         >
             {value === index &&
@@ -35,9 +35,9 @@ function App() {
     };
 
     return (
-        <div className="App" style={{overflow: 'hidden'}}>
+        <div className="App">
             <MuiThemeProvider>
-                <AppBar position="sticky" style={{background: 'lightslategray'}}>
+                <AppBar position="sticky" style={{background: 'lightslategray', flex: '0 1'}}>
                     <Hidden smDown>
                         <Typography variant={"h4"}
                                     style={{
@@ -66,7 +66,7 @@ function App() {
                         <Tab label="CV"/>
                     </Tabs>
                 </AppBar>
-                <TabPanel value={value} index={0}>
+                <TabPanel value={value} index={0} overflow={'hidden'}>
                     <HomePage/>
                 </TabPanel>
                 <TabPanel value={value} index={1}>
