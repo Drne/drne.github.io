@@ -128,7 +128,7 @@ export default function AboutPage() {
                     </Typography>
                     <img src={arrowHandPic} alt="down arrow"/>
                 </div>
-                <GridList cellHeight={'500'} spacing={1} className={classes.gridList}>
+                <GridList cellHeight={500} spacing={1} className={classes.gridList}>
                     {tileData.map((tile) => (
                         <GridListTile key={tile.img} cols={tile.featured ? 2 : 1} rows={tile.featured ? 2 : 1}>
                             <img src={tile.img} alt={tile.title}/>

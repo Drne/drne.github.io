@@ -35,8 +35,9 @@ function App() {
     };
 
     return (
-        <div className="App">
-            <MuiThemeProvider>
+        <MuiThemeProvider>
+            <div className="App">
+
                 <AppBar position="sticky" style={{background: 'lightslategray', flex: '0 1'}}>
                     <Hidden smDown>
                         <Typography variant={"h4"}
@@ -75,8 +76,9 @@ function App() {
                 <TabPanel value={value} index={2}>
                     Item Three
                 </TabPanel>
-            </MuiThemeProvider>
-        </div>
+
+            </div>
+        </MuiThemeProvider>
     );
 }
 
