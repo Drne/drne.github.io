@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+  - 14
+script:
+  echo "skipping tests"
+cache:
+  npm: false
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  keep_history: true
+  target_branch: master
+  on:
+    branch: develop
