@@ -3,6 +3,7 @@ import {Fade, IconButton, Popper, Typography} from "@material-ui/core";
 import {SocialIcon} from "react-social-icons";
 import PhoneIcon from '@material-ui/icons/Phone';
 import {useState} from "react";
+import AnimatedName from "./AnimatedName";
 
 export default function HomePage() {
 
@@ -23,10 +24,8 @@ export default function HomePage() {
             flex: 1,
             flexWrap: 'wrap',
         }}>
-            <div style={{margin: '10% 5%', flex: 1}}>
-                <Typography variant="h1" style={{fontFamily: ['playfair']}} align="left">
-                    Drew Colgin
-                </Typography>
+            <div style={{margin: '10% 5%', flex: .4, flexWrap: 'flex'}}>
+                <AnimatedName />
                 <Typography variant="subtitle1" align="left" style={{fontFamily: ['playfair'], fontSize: '1.5rem'}}>
                     Just a software engineer from Texas who likes baking and board games.
                 </Typography>
@@ -47,7 +46,7 @@ export default function HomePage() {
                     </Popper>
                 </div>
             </div>
-            <img src={lillyPic} alt="tada" style={{flex: 1, pointerEvents: 'none'}}/>
+            <img src={lillyPic} alt="tada" style={{flex: .6, pointerEvents: 'none', marginLeft: 'auto', maxHeight: '140vh'}}/>
         </div>
     )
 }

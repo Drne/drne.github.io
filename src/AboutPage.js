@@ -119,7 +119,7 @@ export default function AboutPage() {
                 </Typography>
                 <Typography variant={"h6"} align={"center"} style={{fontFamily: ['playfair'], margin: '5vw 20vw'}}>
                     Born and raised in Houston, I've since said goodbye to hurricanes and hello to blizzards
-                    by moving to the Northeast. I graduated from Northeastern University with a bachelor's in computer
+                    by moving to the Northeast. I graduated from Northeastern University in 2021 with a bachelor's in computer
                     science, which I'm now putting to work as a software engineer living in New York City.
                 </Typography>
                 <div>

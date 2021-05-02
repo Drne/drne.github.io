@@ -4,6 +4,7 @@ import {useState} from "react";
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import AboutPage from "./AboutPage";
 import HomePage from "./HomePage";
+import ResumePage from "./ResumePage";
 
 function TabPanel(props) {
     const {children, value, index, overflow, ...other} = props;
@@ -74,7 +75,7 @@ function App() {
                     <AboutPage/>
                 </TabPanel>
                 <TabPanel value={value} index={2}>
-                    Item Three
+                   <ResumePage />
                 </TabPanel>
 
             </div>
