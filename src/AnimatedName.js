@@ -10,7 +10,7 @@ function lettersToTransforms(letters) {
         const rangeStart = getRandomValueInRange(0, .75)
         const rangeEnd = rangeStart + .25
         return ({
-            fig: <Typography variant={"h1"} style={{fontFamily: 'playfair'}}>{letter}</Typography>,
+            fig: <Typography variant={"h1"} style={{fontFamily: 'playfair display'}}>{letter}</Typography>,
             op: {range: [rangeStart, rangeEnd], output: [0, 1]},
             trans: {
                 "extrapolate": "clamp",

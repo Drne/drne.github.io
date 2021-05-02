@@ -26,7 +26,7 @@ export default function HomePage() {
         }}>
             <div style={{margin: '10% 5%', flex: .4, flexWrap: 'flex'}}>
                 <AnimatedName />
-                <Typography variant="subtitle1" align="left" style={{fontFamily: ['playfair'], fontSize: '1.5rem'}}>
+                <Typography variant="subtitle1" align="left" style={{fontFamily: ['playfair display'], fontSize: '1.5rem'}}>
                     Just a software engineer from Texas who likes baking and board games.
                 </Typography>
                 <div style={{display: 'flex', justifyContent: 'space-evenly', marginTop: '2rem'}}>

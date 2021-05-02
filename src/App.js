@@ -45,7 +45,7 @@ function App() {
                                     style={{
                                         position: "absolute",
                                         padding: '5px',
-                                        fontFamily: ['Open Sans'],
+                                        fontFamily: ['Playfair Display'],
                                         fontSize: '2rem'
                                     }}>
                             Drew Colgin

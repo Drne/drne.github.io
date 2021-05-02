@@ -114,16 +114,16 @@ export default function AboutPage() {
             flexDirection: 'column',
         }}>
             <div className={classes.root}>
-                <Typography variant={"h2"} align={"center"} style={{fontFamily: ['playfair'], paddingTop: '2rem'}}>
+                <Typography variant={"h2"} align={"center"} style={{fontFamily: ['playfair display'], paddingTop: '2rem'}}>
                     Who Is This Guy?
                 </Typography>
-                <Typography variant={"h6"} align={"center"} style={{fontFamily: ['playfair'], margin: '5vw 20vw'}}>
+                <Typography variant={"h6"} align={"center"} style={{fontFamily: ['playfair display'], margin: '5vw 20vw'}}>
                     Born and raised in Houston, I've since said goodbye to hurricanes and hello to blizzards
                     by moving to the Northeast. I graduated from Northeastern University in 2021 with a bachelor's in computer
                     science, which I'm now putting to work as a software engineer living in New York City.
                 </Typography>
                 <div>
-                    <Typography variant={"h6"} align={"center"} style={{fontFamily: ['playfair'], margin: '5vw 20vw'}}>
+                    <Typography variant={"h6"} align={"center"} style={{fontFamily: ['playfair display'], margin: '5vw 20vw'}}>
                         I also enjoy baking from time to time, so enjoy some pictures of that.
                     </Typography>
                     <img src={arrowHandPic} alt="down arrow"/>
