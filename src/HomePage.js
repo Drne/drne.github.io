@@ -46,7 +46,7 @@ export default function HomePage() {
                     </Popper>
                 </div>
             </div>
-            <img src={lillyPic} alt="tada" style={{flex: .6, pointerEvents: 'none', marginLeft: 'auto', maxHeight: '140vh'}}/>
+            <img src={lillyPic} alt="tada" style={{flex: .6, pointerEvents: 'none', marginLeft: 'auto', maxWidth: 700}}/>
         </div>
     )
 }

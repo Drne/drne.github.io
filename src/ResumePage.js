@@ -8,15 +8,14 @@ export default function ResumePage() {
     return (
         <div style={{
             backgroundImage: "linear-gradient(white, lightslategrey)",
-            overflow: 'hidden',
             display: 'flex',
             flex: 1,
             pointerEvents: 'none',
-            height: '100%',
             flexDirection: 'column',
+            height: 'fit-content'
         }}>
-            <div style={{margin: 15, display: 'flex', flexWrap: 'wrap'}}>
-                <div style={{flex: 1, margin: 5}}>
+            <div style={{margin: '.5%', display: 'flex', flexWrap: 'wrap'}}>
+                <div style={{flex: 1, margin: '.5%'}}>
                     <div style={{display: 'flex', marginBottom: 2}}>
                         <Typography variant={"h4"} style={{fontWeight: 'bold'}}>
                             Education
@@ -24,7 +23,7 @@ export default function ResumePage() {
                         <Divider style={{borderTop: '2px solid black', alignSelf: 'center', flex: 1}}/>
                     </div>
                 </div>
-                <div style={{flex: 1, margin: 5, minWidth: 350}}>
+                <div style={{flex: 1, margin: '.5%', minWidth: 200}}>
                     <div style={{display: 'flex', marginBottom: 2}}>
                         <Typography variant={"h4"} style={{fontWeight: 'bold'}}>
                             Work Experience

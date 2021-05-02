@@ -75,7 +75,6 @@ const tileData = [
 const useStyles = makeStyles(() => ({
     root: {
         display: 'flex',
-        flexWrap: 'wrap',
         justifyContent: 'space-around',
         overflow: 'hidden',
         flex: 1,
@@ -117,13 +116,13 @@ export default function AboutPage() {
                 <Typography variant={"h2"} align={"center"} style={{fontFamily: ['playfair display'], paddingTop: '2rem'}}>
                     Who Is This Guy?
                 </Typography>
-                <Typography variant={"h6"} align={"center"} style={{fontFamily: ['playfair display'], margin: '5vw 20vw'}}>
+                <Typography variant={"h6"} align={"center"} style={{fontFamily: ['playfair display'], margin: '5% 10%'}}>
                     Born and raised in Houston, I've since said goodbye to hurricanes and hello to blizzards
                     by moving to the Northeast. I graduated from Northeastern University in 2021 with a bachelor's in computer
                     science, which I'm now putting to work as a software engineer living in New York City.
                 </Typography>
                 <div>
-                    <Typography variant={"h6"} align={"center"} style={{fontFamily: ['playfair display'], margin: '5vw 20vw'}}>
+                    <Typography variant={"h6"} align={"center"} style={{fontFamily: ['playfair display'], margin: '5% 10%'}}>
                         I also enjoy baking from time to time, so enjoy some pictures of that.
                     </Typography>
                     <img src={arrowHandPic} alt="down arrow"/>
