@@ -1,4 +1,4 @@
-import {Hidden, makeStyles, Typography} from "@material-ui/core";
+import {Hidden, makeStyles, Paper, Typography} from "@material-ui/core";
 
 const useStyles = makeStyles(() => ({
     root: {
@@ -6,7 +6,8 @@ const useStyles = makeStyles(() => ({
         flexDirection: 'column',
         minWidth: '20%',
         maxWidth: '500px',
-        border: '1px solid black'
+        marginTop: '5px',
+        padding: '5px'
     },
     container1: {
         display: 'flex',
@@ -49,16 +50,16 @@ const useStyles = makeStyles(() => ({
     }
 }));
 
-export default function WorkExperience({position, companyName, timeRange, body}) {
+export default function WorkExperience({position, companyName, timeRange, body, iconLink}) {
     const classes = useStyles();
 
     return (
-        <div className={classes.root}>
+        <Paper className={classes.root}>
             <div className={classes.container1}>
                 <div className={classes.companyDetails}>
                     <Hidden xsDown>
                         <div className={classes.companyIcon}>
-                            <img src={"https://www.schonfeld.com/favicon.png"} alt={"schonfeld"}
+                            <img src={iconLink} alt={""}
                                  style={{maxWidth: '80%', margin: 'auto', filter: 'brightness(0) invert(1)'}}/>
                         </div>
                     </Hidden>
@@ -80,6 +81,6 @@ export default function WorkExperience({position, companyName, timeRange, body})
             <Typography variant={"body1"}>
                 {body}
             </Typography>
-        </div>
+        </Paper>
     )
 }
