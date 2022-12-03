@@ -81,7 +81,7 @@ const useStyles = makeStyles(() => ({
         flexDirection: 'column'
     },
     gridList: {
-        // Promote the list into his own layer on Chrome. This cost memory but helps keeping high FPS.
+        // Promote the list into its own layer on Chrome. This cost memory but helps keeping high FPS.
         transform: 'translateZ(0)',
         position: 'absolute',
         maxWidth: '100vw',

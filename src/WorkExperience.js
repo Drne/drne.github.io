@@ -4,8 +4,8 @@ const useStyles = makeStyles(() => ({
     root: {
         display: 'flex',
         flexDirection: 'column',
-        minWidth: '20%',
-        maxWidth: '320px',
+        minWidth: '200px',
+        maxWidth: '300px',
         marginTop: '5px',
         padding: '5px'
     },
