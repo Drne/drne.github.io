@@ -40,6 +40,7 @@ function Icosahedron({ facePoint, position }) {
         } else {
             return [[], []]
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [earthRef.current])
 
     useEffect(() => {
