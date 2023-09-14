@@ -23,7 +23,7 @@ function avgDistancePlaneToPoint(plane, point) {
     return distance / 3
 }
 
-function Icosehedron({ facePoint, position }) {
+function Icosahedron({ facePoint, position }) {
 
     const earthRef = useRef()
     const groupRef = useRef()
@@ -206,7 +206,7 @@ function Universe() {
 
     return (
         <group>
-            <Icosehedron facePoint={facePoint}/>
+            <Icosahedron facePoint={facePoint}/>
             <BufferPoints progressPoint={facePoint} setProgressPoint={setFacePoint} />
         </group>
     )

@@ -5,7 +5,7 @@ import {
     faLinkedin
 } from "@fortawesome/free-brands-svg-icons";
 import styled from "@emotion/styled";
-import {faEnvelope, faFile, faFileArrowDown} from "@fortawesome/free-solid-svg-icons";
+import {faEnvelope, faFile} from "@fortawesome/free-solid-svg-icons";
 
 export function SocialIcons() {
 
