@@ -215,7 +215,7 @@ function Universe() {
 function App() {
 
     return (
-        <AppContainer className="App">
+        <AppContainer className="App" style={{height: '100%', width: '100%'}}>
             <Canvas>
                 <hemisphereLight intensity={.9} groundColor={0x2F586D} skyColor={0x0E4A6D} />
                 <OrbitControls autoRotate autoRotateSpeed={0.2}/>
