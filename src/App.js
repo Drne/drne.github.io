@@ -44,11 +44,10 @@ function Icosahedron({ facePoint, position }) {
 
     useEffect(() => {
         if (earthRef.current) {
-            const count = earthRef.current.geometry.attributes.position.count
             const threeColor = new THREE.Color(randomColor)
             setColors(Float32Array.from(new Array(faces.length * 3).fill([threeColor.r, threeColor.g, threeColor.b, 0]).flat()))
         }
-    }, [earthRef])
+    }, [earthRef, faces])
 
 
     useFrame(({ clock }) => {
