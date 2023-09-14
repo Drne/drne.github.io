@@ -5,7 +5,7 @@ import {
     faLinkedin
 } from "@fortawesome/free-brands-svg-icons";
 import styled from "@emotion/styled";
-import {faEnvelope, faFile} from "@fortawesome/free-solid-svg-icons";
+import {faEnvelope} from "@fortawesome/free-solid-svg-icons";
 
 export function SocialIcons() {
 
@@ -26,11 +26,11 @@ export function SocialIcons() {
             >
                 <FontAwesomeIcon icon={faEnvelope} size="2x" style={{color: 'white'}}/>
             </a>
-            <a
-                href="/static/resume.pdf"
-            >
-                <FontAwesomeIcon icon={faFile} size="2x" style={{color: 'white'}}/>
-            </a>
+            {/*<a*/}
+            {/*    href="/static/resume.pdf"*/}
+            {/*>*/}
+            {/*    <FontAwesomeIcon icon={faFile} size="2x" style={{color: 'white'}}/>*/}
+            {/*</a>*/}
         </IconsContainer>
     )
 }
