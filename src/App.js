@@ -4,6 +4,8 @@ import React, {useEffect, useMemo, useRef, useState} from "react";
 import {Line, OrbitControls, PerspectiveCamera } from '@react-three/drei'
 import * as THREE from 'three';
 import niceColors from 'nice-color-palettes';
+import styled from '@emotion/styled'
+import {SocialIcons} from "./SocialIcons";
 
 const randomColorIndex = Math.floor(Math.random() * niceColors.length)
 const randomColor = niceColors[randomColorIndex][0]
@@ -14,14 +16,11 @@ function distanceBetweenPoints(p1, p2) {
 }
 
 function avgDistancePlaneToPoint(plane, point) {
-    let distance = 100000
+    let distance = 0
     plane.forEach((planePoint) => {
-        const dis = distanceBetweenPoints(planePoint, point)
-        if (dis < distance) {
-            distance = dis
-        }
+        distance += distanceBetweenPoints(planePoint, point)
     })
-    return distance
+    return distance / 3
 }
 
 function Icosehedron({ facePoint, position }) {
@@ -216,7 +215,7 @@ function Universe() {
 function App() {
 
     return (
-        <div className="App">
+        <AppContainer className="App">
             <Canvas>
                 <hemisphereLight intensity={.9} groundColor={0x2F586D} skyColor={0x0E4A6D} />
                 <OrbitControls autoRotate autoRotateSpeed={0.2}/>
@@ -224,8 +223,37 @@ function App() {
                 <Universe />
                 <SpringPerspectiveCamera/>
             </Canvas>
-        </div>
+            <div style={{position: 'absolute', display: 'flex', flexDirection: 'column', left: '10px'}}>
+                <Text>
+                    Drew Colgin
+                </Text>
+                <SubText>
+                    Software Engineer
+                </SubText>
+                <SocialIcons />
+            </div>
+        </AppContainer>
     );
 }
+
+const AppContainer = styled('div')({
+    background: 'black',
+    position: 'relative'
+
+})
+
+const Text = styled('span')({
+    textAlign: 'left',
+    fontSize: '40px',
+    userSelect: 'none',
+    fontFamily: ['Ubuntu Mono', 'monospace'],
+})
+
+const SubText = styled('span')({
+    textAlign: 'left',
+    fontSize: '25px',
+    userSelect: 'none',
+    fontFamily: ['Ubuntu Mono', 'monospace'],
+})
 
 export default App;
