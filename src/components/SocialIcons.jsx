@@ -13,24 +13,25 @@ export function SocialIcons() {
         <IconsContainer>
             <a
                 href="https://www.linkedin.com/in/andrew-colgin/"
+                target="_blank"
+                rel="noopener noreferrer"
             >
                 <FontAwesomeIcon icon={faLinkedin} size="2x" style={{color: 'white'}}/>
             </a>
             <a
                 href="https://github.com/drne"
+                target="_blank"
+                rel="noopener noreferrer"
             >
                 <FontAwesomeIcon icon={faGithub} size="2x" style={{color: 'white'}}/>
             </a>
             <a
                 href="mailto:drewcolgin@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
             >
                 <FontAwesomeIcon icon={faEnvelope} size="2x" style={{color: 'white'}}/>
             </a>
-            {/*<a*/}
-            {/*    href="/static/resume.pdf"*/}
-            {/*>*/}
-            {/*    <FontAwesomeIcon icon={faFile} size="2x" style={{color: 'white'}}/>*/}
-            {/*</a>*/}
         </IconsContainer>
     )
 }

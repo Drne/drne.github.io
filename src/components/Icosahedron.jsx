@@ -10,7 +10,8 @@ const threeColor = new THREE.Color('white')
 export function Icosahedron({ facePoint, position }) {
     const earthRef = useRef()
     const groupRef = useRef()
-    const [colors, setColors] = useState(Float32Array.from(new Array(666).fill([new THREE.Color(niceColors[0][0]).r,  new THREE.Color(niceColors[0][0]).g, new THREE.Color(niceColors[0][0]).b], 0).flat()))
+    const color = new THREE.Color(niceColors[0][0])
+    const [colors, setColors] = useState(Float32Array.from(new Array(666).fill([color.r,  color.g, color.b], 0).flat()))
     const [visitedIndexes, setVisitedIndexes] = useState([])
     const vec = new THREE.Vector3()
 

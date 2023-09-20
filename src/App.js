@@ -13,7 +13,7 @@ function App() {
         <AppContainer className="App">
             <Canvas>
                 <hemisphereLight intensity={.9} groundColor={0x2F586D} skyColor={0x0E4A6D} />
-                <OrbitControls autoRotate autoRotateSpeed={0.2}/>
+                <OrbitControls autoRotate autoRotateSpeed={0.2} enableZoom={false}/>
                 <directionalLight color="blue" position={[0, 5, 20]} />
                 <Universe />
                 <SpringPerspectiveCamera/>

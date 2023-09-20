@@ -1,4 +1,4 @@
-import {SocialIcons} from "../SocialIcons";
+import {SocialIcons} from "./SocialIcons";
 import React from "react";
 import styled from "@emotion/styled";
 
