@@ -22,6 +22,7 @@ const Text = styled('span')({
     fontSize: '40px',
     userSelect: 'none',
     fontFamily: ['Ubuntu Mono', 'monospace'],
+    color: 'white',
 })
 
 const SubText = styled('span')({
@@ -29,4 +30,5 @@ const SubText = styled('span')({
     fontSize: '25px',
     userSelect: 'none',
     fontFamily: ['Ubuntu Mono', 'monospace'],
+    color: 'white',
 })
