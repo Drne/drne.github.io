@@ -255,6 +255,7 @@ const SubText = styled('span')({
     fontSize: '25px',
     userSelect: 'none',
     fontFamily: ['Ubuntu Mono', 'monospace'],
+    color: 'white',
 })
 
 export default App;
