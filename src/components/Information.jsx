@@ -17,7 +17,7 @@ export function Information() {
     )
 }
 
-const Text = styled('span')({
+const Text = styled('div')({
     textAlign: 'left',
     fontSize: '40px',
     userSelect: 'none',
